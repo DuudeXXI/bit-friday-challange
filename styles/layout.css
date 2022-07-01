@@ -1,9 +1,7 @@
 main{
     margin: 0;
     padding: 0;
-    position: relative;
     margin-left:100px;
-    width: 100vh;
     height: 100%;
 }
 .nav-bar{
