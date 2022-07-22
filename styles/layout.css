@@ -106,8 +106,30 @@ main{
     color: var(--hover-color);
 }
 
-/* end */
+/* js active */
+.active{
+    opacity: 1;
+    color: red;
+    width: 160px;
+    background-color: red;
+    border-bottom-left-radius: 99px;
+    border-top-left-radius: 99px;
+    justify-items: auto;
+    fill: var(--hover-color);
+}
 
+/* js active */
+
+/* end */
+.nav-bar > .button .pseudo-home{
+    filter: red;
+    background-color: red;
+    text-align: center;
+    padding: 15px;
+}
+.nav-bar > .button .color{
+    fill: red;
+}
 .nav-bar .pseudo-home::after{
     content: "Home";
     position: absolute;
