@@ -5,6 +5,7 @@ main{
     margin-left: 100px;
 }
 .nav-bar{
+    overflow: hidden;
     position: fixed;
     width: 100px;
     height: 100%;
@@ -41,7 +42,7 @@ main{
     position: relative;
     background-color: transparent;
     pointer-events:auto;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-items: left;
     margin-left:10px;
@@ -107,78 +108,32 @@ main{
 }
 
 /* js active */
-.active{
-    opacity: 1;
-    color: red;
-    width: 160px;
-    background-color: red;
-    border-bottom-left-radius: 99px;
-    border-top-left-radius: 99px;
-    justify-items: auto;
+.nav-bar .active{
+    background-color: var(--hover-button-color);
+    border-radius: 150px 0px 0px 150px;
+}
+.nav-bar > .button.active svg{
     fill: var(--hover-color);
 }
-
+.nav-bar > .button.active.backgroundDOM{
+    background-color: var(--hover-button-color);
+}
 /* js active */
 
 /* end */
-.nav-bar > .button .pseudo-home{
-    filter: red;
-    background-color: red;
-    text-align: center;
-    padding: 15px;
-}
-.nav-bar > .button .color{
-    fill: red;
-}
-.nav-bar .pseudo-home::after{
-    content: "Home";
-    position: absolute;
-    opacity: 0;
-    font-size: 16px;
+.nav-bar .disapear-text{
+    font-size: 14px;
     font-weight: 500;
-    color: none;
-    top:50%;
+    color: var(--main-highlight-color);
     margin-left: 15px;
-    transform: translateY(-50%);
-    transition: all 0.3s;
-}
-.nav-bar .pseudo-calendar::after{
-    content: "Calendar";
-    position: absolute;
-    font-size: 16px;
-    color:none;
-    opacity: 0;
-    font-weight: 500;
-    top:50%;
-    margin-left: 15px;
-    transform: translateY(-50%);
-    transition: all 0.3s;
-}
-.nav-bar .pseudo-fe::after{
-    content: "FE";
-    position: absolute;
-    font-size: 16px;
-    font-weight: 500;
-    color:none;
     opacity: 0;
     transition: all 0.3s;
+}
+.nav-bar:hover .disapear-text{
+    opacity: 1;
+}
+.nav-bar .button:hover .disapear-text{
     color: var(--hover-color);
-    top:50%;
-    margin-left: 15px;
-    transform: translateY(-50%);
-}
-.nav-bar .pseudo-games::after{
-    content: "Games";
-    position: absolute;
-    font-size: 16px;
-    font-weight: 500;
-    color:none;
-    color: var(--hover-color);
-    top:50%;
-    margin-left: 15px;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: all 0.3s;
 }
 .nav-bar > .button:hover .color{
     fill: var(--hover-color);
@@ -254,6 +209,7 @@ footer > span::before{
 
 .grid-element-1{
     margin-left: 10px;
+    font-weight: 500;
     font-size: 36px;
     grid-column: 1 / 6;
 }

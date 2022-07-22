@@ -1,4 +1,4 @@
-const buttonDOM = document.querySelectorAll('.button-dom');
+const buttonDOM = document.querySelectorAll('.button');
 
 for (let i = 0; i < buttonDOM.length; i++) {
     let button = buttonDOM[i]
