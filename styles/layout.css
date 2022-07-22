@@ -172,15 +172,15 @@ footer > span::before{
 
 .grid-element-1{
     justify-self:flex-start;
-    margin-left: 10px;
     font-weight: 500;
     font-size: 36px;
     grid-column: 1 / 5;
-    margin-left: 40px;
+    margin-left: 70px;
 }
 .grid-element-2{
+    margin-right: 20px;
     padding: 10px 70px;
-    grid-column: 7 / span 5;
+    grid-column: 9 / span 4;
     background-color: white;
     border-radius: 25px;
 }
@@ -206,6 +206,7 @@ footer > span::before{
         grid-column: 2 / -4;
     }
     .grid-element-2{
+        margin-right: 0;
         grid-column: 1 / -1;
         order:-1;
     }
@@ -224,6 +225,7 @@ footer > span::before{
         grid-column: 2 / -4;
     }
     .grid-element-2{
+        margin-right: 0;
         grid-column: 2 / -2;
     }
     .grid-element-3{    
