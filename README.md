@@ -2,11 +2,12 @@
 
 ## About
 
-In this page we  will store our projects
+In this project we will store our other projects
 
 ## Functionalities
 
 This project has navigation bar
+
 Each page has different funcionalities:
 - Home page is simply an introduction
 - On callendar there will be callendar and short statistic
