@@ -1,10 +1,8 @@
 const buttonDOM = document.querySelectorAll('.button');
 
-for (let i = 0; i < buttonDOM.length; i++) {
-    let button = buttonDOM[i]
+buttonDOM.forEach(button => {
     button.addEventListener('click', function () {
-            console.log('button cliked');
-            button.classList.toggle('active');
-    });
-    
-}
+        buttonDOM.forEach(button => { button.classList.remove('active')});
+        button.classList.add('active');
+    })
+});
