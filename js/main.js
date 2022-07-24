@@ -8,17 +8,16 @@ buttonDOM.forEach(button => {
 });
 
 function getTime() {
-    let time = new Date();
-    let hours = time.getHours();
-    let minutes = time.getMinutes();
+    let timeDOM = new Date();
+    let hours = timeDOM.getHours();
+    let minutes = timeDOM.getMinutes();
 
     hours=('0' + hours).slice(-2);
     minutes=('0' + minutes).slice(-2);
     seconds=('0' + seconds).slice(-2);
-
-    document.getElementById('time').innerHTML = 
-    hours + ' : ' + minutes;
+    document.getElementById('time').innerHTML = hours + ' : ' + minutes;
     
-    setTimeout(getTime, 500);
+    setInterval(getTime, 1000);
 }
->>>>>>> c2499e8516efb7c3397d2812dcd1ad8f2a771415
+
+
