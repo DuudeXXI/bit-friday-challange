@@ -1,5 +1,6 @@
 const buttonDOM = document.querySelectorAll('.button');
-const timeDOM = document.querySelector('data-time')
+let timeDOM = document.querySelector('#home-time');
+const dateDOM = document.querySelector('#home-day');
 
 buttonDOM.forEach(button => {
     button.addEventListener('click', function () {
@@ -8,4 +9,5 @@ buttonDOM.forEach(button => {
     })
 });
 
-console.log(timeDOM);
+let time = new Date();
+console.log(time.setHours());
