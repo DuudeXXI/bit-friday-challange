@@ -147,7 +147,8 @@ footer > span::before{
     align-items: center;
     justify-items: center;
     overflow:hidden;
-    height: 100vh;
+    gap:20px;
+    height: 100%;
 }
 
 .bottom-quote-wrap{
@@ -164,8 +165,6 @@ footer > span::before{
 }
 .grid-main-layout > img{
     object-fit: cover;
-    align-self: stretch;
-    justify-self: stretch;
 }
 
 /* Home grid elements start */
@@ -246,5 +245,5 @@ footer > span::before{
 .home-date{
     font-weight: 500;
     font-size: 24px;
-    Line-height: 29.26px;
+    Line-height: 29px;
 }
