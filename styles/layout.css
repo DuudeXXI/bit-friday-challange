@@ -179,7 +179,7 @@ footer > span::before{
 .grid-element-2{
     margin-right: 20px;
     padding: 10px 70px;
-    grid-column: 9 / span 4;
+    grid-column: 8 / span 5;
     background-color: white;
     border-radius: 25px;
 }
